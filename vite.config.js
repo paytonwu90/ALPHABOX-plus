@@ -25,7 +25,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base: '/WebLayout2023-week8/',
+  base: '/ALPHABOX-plus/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
@@ -36,7 +36,7 @@ export default defineConfig({
     open: 'pages/index.html',
   },
   preview: {
-    open: '/WebLayout2023-week8/index.html',
+    open: '/ALPHABOX-plus/index.html',
   },
   build: {
     rollupOptions: {

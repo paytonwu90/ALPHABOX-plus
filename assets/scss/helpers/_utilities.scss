@@ -1,0 +1,142 @@
+.size-8px {
+  width: 8px !important;
+  height: 8px !important;
+}
+.size-16px {
+  width: 16px !important;
+  height: 16px !important;
+}
+.size-196px {
+  width: 196px !important;
+  height: 196px !important;
+}
+.size-lg-12px {
+  @include media-breakpoint-up(lg) {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+.w-124px {
+  width: 124px !important;
+}
+
+.h-8px {
+  height: 8px !important;
+}
+.h-40px {
+  height: 40px !important;
+}
+.h-48px {
+  height: 48px !important;
+}
+.h-120px {
+  height: 120px !important;
+}
+.h-lg-12px {
+  @include media-breakpoint-up(lg) {
+    height: 12px !important;
+  }
+}
+
+.material-icons.md-80 { font-size: 80px; }
+
+.font-Shrikhand {
+  font-family: 'Shrikhand', cursive !important;
+}
+.font-Saira-ExtraCondensed {
+  font-family: 'Saira Extra Condensed', sans-serif !important;
+}
+
+.lh-xxxl-base {
+  @media (min-width: 1920px) {
+    line-height: $line-height-base !important;
+  }
+}
+
+.letter-spacing-xxxl-16px {
+  @media (min-width: 1920px) {
+    letter-spacing: 16px !important;
+  }
+}
+.letter-spacing-xxxl-80px {
+  @media (min-width: 1920px) {
+    letter-spacing: 80px !important;
+  }
+}
+
+.border-top-dotted-white-2 {
+  border-top: 2px dotted #fff;
+}
+.border-bottom-dotted-white-2 {
+  border-bottom: 2px dotted #fff;
+}
+.border-lg-0 {
+  @include media-breakpoint-up(lg) {
+    border-width: 0 !important;
+  }
+}
+.border-bottom-lg-none {
+  @include media-breakpoint-up(lg) {
+    border-bottom: none !important;
+  }
+}
+.border-end-lg {
+  @include media-breakpoint-up(lg) {
+    border-right: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color) !important;
+  }
+}
+
+.mt-1px {
+  margin-top: 1px;
+}
+.mb-n20 {
+  margin-bottom: -104px !important;
+}
+
+
+.bg-home {
+  background-image: url('/assets/images/home_background.png');
+  background-repeat: no-repeat;
+}
+.bg-alphabox {
+  background-image: url('/assets/images/carousel_background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bg-primary-800 {
+  background-color: #380C7E !important;
+}
+.bg-radial-gradient-from-dark-center {
+  background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+}
+.bg-radial-gradient-from-black-center {
+  background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+}
+.bg-linear-gradient-from-primary {
+  background: linear-gradient(90deg, #7000FF 1.22%, #11002D 116.05%);
+}
+.bg-linear-gradient-to-primary {
+  background: linear-gradient(90deg, #11002D 1.22%, #7000FF 116.05%);
+}
+
+.aspect-ratio-1x1 {
+  aspect-ratio: 1;
+}
+.aspect-ratio-md-9x21 {
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+.rotate-180 {
+  rotate: 180deg;
+}
+
+.spin {
+  animation: spin 30s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}

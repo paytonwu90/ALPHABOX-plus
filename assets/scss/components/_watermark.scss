@@ -1,0 +1,16 @@
+.watermark {
+  position: absolute;
+  font-family: 'Shrikhand', cursive;
+  font-size: 128px;
+  color: rgba(255, 255, 255, 0.04);
+  bottom: 0;
+  left: 0;
+  transform: translate(calc((100% - 100vw) / -2), 38%);
+
+  @include media-breakpoint-up (md) {
+    font-size: 250px;
+  }
+  @include media-breakpoint-up (xl) {
+    font-size: 400px;
+  }
+}

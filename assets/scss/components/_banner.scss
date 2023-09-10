@@ -1,0 +1,43 @@
+.banner-avatar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  aspect-ratio: 1;
+  transition: box-shadow .25s ease-in-out;
+
+  &-1 {
+    background-image: url('/assets/images/diane_square1.png');
+  }
+  &-2 {
+    background-image: url('/assets/images/felix_square1.png');
+  }
+  &-3 {
+    background-image: url('/assets/images/karina_square1.png');
+  }
+  &-4 {
+    background-image: url('/assets/images/vito_square1.png');
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-1 {
+      background-image: url('/assets/images/diane.png');
+      aspect-ratio: 416/676;
+    }
+    &-2 {
+      background-image: url('/assets/images/felix.png');
+      aspect-ratio: 416/580;
+    }
+    &-3 {
+      background-image: url('/assets/images/karina.png');
+      aspect-ratio: 416/580;
+    }
+    &-4 {
+      background-image: url('/assets/images/vito.png');
+      aspect-ratio: 416/676;
+    }
+  }
+}

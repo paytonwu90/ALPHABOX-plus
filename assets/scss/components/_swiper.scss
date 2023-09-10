@@ -1,0 +1,41 @@
+.recommandation {
+  .swiper-scrollbar-drag {
+    background-color: #fff;
+  }
+  
+  .swiper-scrollbar {
+    background-color: rgba(255, 255, 255, 0.20);
+  }
+}
+
+.carousel {
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1;
+
+    &:first-child {
+      background-image: url('/assets/images/carousel.png');
+    }
+    &:nth-child(2) {
+      background-image: url('/assets/images/carousel2.jpg');
+    }
+    &:nth-child(3) {
+      background-image: url('/assets/images/carousel3.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      aspect-ratio: 21 / 9;
+    }
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    &::after {
+      content: '';
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.accordion-item {
+  border-bottom: 2px dotted #fff;
+  padding-top: 0;
+  padding-bottom: 16px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+}
+
+.accordion-button {
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  @include media-breakpoint-up(lg) {
+    padding-right: 18%;
+  }
+}
+
+.accordion-body {
+  padding-top: 0;
+  padding-bottom: 16px;
+  @include media-breakpoint-up(lg) {
+    padding-right: 25%;
+  }
+}

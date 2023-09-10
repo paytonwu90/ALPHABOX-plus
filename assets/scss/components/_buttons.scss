@@ -1,0 +1,21 @@
+.btn-white {
+  $value: $white;
+  @include button-variant(
+    $value,
+    $value,
+    $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+    $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+    $active-background: shade-color($value, $btn-active-bg-shade-amount),
+    $active-border: shade-color($value, $btn-active-border-shade-amount)
+  );
+}
+
+.icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  &-text {
+    margin-top: -2px;
+  }
+}

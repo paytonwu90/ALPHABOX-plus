@@ -1,0 +1,73 @@
+.transitionAvatar {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 0.4618;
+  border-right: 1px solid #fff;
+  @include media-breakpoint-up (lg) {
+    aspect-ratio: 0.5479;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: opacity .2s ease-in-out;
+    @include media-breakpoint-up (lg) {
+      opacity: 1;
+    }
+  }
+
+  &-1 {
+    background-image: url('/assets/images/diane_vertical.png');
+  }
+  &-2 {
+    background-image: url('/assets/images/felix_vertical.png');
+  }
+  &-3 {
+    background-image: url('/assets/images/karina_verticalgle.png');
+  }
+  &-4 {
+    background-image: url('/assets/images/vito_vertical.png');
+  }
+
+
+  &-number {
+    font-size: 128px;
+    @include media-breakpoint-up (sm) {
+      font-size: 200px;
+    }
+    @include media-breakpoint-up (md) {
+      font-size: 300px;
+    }
+    @include media-breakpoint-up (lg) {
+      font-size: 128px;
+    }
+    @include media-breakpoint-up (xl) {
+      font-size: 200px;
+    }
+    @include media-breakpoint-up (xxl) {
+      font-size: 250px;
+    }
+    @media (min-width: 1600px) {
+      font-size: 300px;
+    }
+    @media (min-width: 1900px) {
+      font-size: 400px;
+    }
+  }
+}

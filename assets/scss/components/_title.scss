@@ -1,0 +1,9 @@
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 40px;
+  @include media-breakpoint-up(lg) {
+    font-size: 48px;
+    letter-spacing: 48px;
+  }
+}

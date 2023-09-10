@@ -1,0 +1,30 @@
+.link-black {
+  color: $black;
+  &:hover,
+  &:focus {
+    color: tint-color($black, $link-shade-percentage);
+  }
+}
+
+.link-white {
+  color: $white;
+  &:hover,
+  &:focus {
+    color: shade-color($white, $link-shade-percentage);
+  }
+}
+
+.hover {
+  &:hover {
+    transform: translateX(10px);
+  }
+}
+
+.hover\:move-icon-right {
+  .icon {
+    transition: transform .15s ease-in-out;
+  }
+  &:hover .icon {
+    transform: translateX(10px);
+  }
+}
